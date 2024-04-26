@@ -431,9 +431,9 @@ class reportWriter():
             self.computerattributes = ['cn', 'sAMAccountName', 'dNSHostName', 'IPv4', 'operatingSystem', 'operatingSystemServicePack', 'operatingSystemVersion', 'lastLogon', 'lastLogonTimestamp', 'pwdLastSet', 'userAccountControl', 'whenCreated', 'objectSid', 'description']
         else:
             self.computerattributes = ['cn', 'sAMAccountName', 'dNSHostName', 'operatingSystem', 'operatingSystemServicePack', 'operatingSystemVersion', 'lastLogon', 'lastLogonTimestamp', 'pwdLastSet', 'userAccountControl', 'whenCreated', 'objectSid', 'description']
-        self.userattributes = ['cn', 'name', 'sAMAccountName', 'memberOf', 'primaryGroupId', 'whenCreated', 'whenChanged', 'lastLogon', 'userAccountControl', 'pwdLastSet', 'objectSid', 'description', 'servicePrincipalName', 'adminCount']
+        self.userattributes = ['cn', 'name', 'sAMAccountName', 'memberOf', 'primaryGroupId', 'whenCreated', 'whenChanged', 'lastLogon', 'lastLogonTimestamp', 'userAccountControl', 'pwdLastSet', 'objectSid', 'description', 'servicePrincipalName', 'adminCount']
         #In grouped view, don't include the memberOf property to reduce output size
-        self.userattributes_grouped = ['cn', 'name', 'sAMAccountName', 'whenCreated', 'whenChanged', 'lastLogon', 'userAccountControl', 'pwdLastSet', 'objectSid', 'description', 'servicePrincipalName', 'adminCount']
+        self.userattributes_grouped = ['cn', 'name', 'sAMAccountName', 'whenCreated', 'whenChanged', 'lastLogon', 'lastLogonTimestamp', 'userAccountControl', 'pwdLastSet', 'objectSid', 'description', 'servicePrincipalName', 'adminCount']
         self.groupattributes = ['cn', 'sAMAccountName', 'memberOf', 'description', 'whenCreated', 'whenChanged', 'objectSid']
         self.policyattributes = ['distinguishedName', 'lockOutObservationWindow', 'lockoutDuration', 'lockoutThreshold', 'maxPwdAge', 'minPwdAge', 'minPwdLength', 'pwdHistoryLength', 'pwdProperties', 'ms-DS-MachineAccountQuota']
         self.trustattributes = ['cn', 'flatName', 'securityIdentifier', 'trustAttributes', 'trustDirection', 'trustType']
